@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "nunito", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* HEADER */
+.nav{
+    background-color: #181818;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 30px;
+}
+.nav-list a{
+    text-decoration: none;
+    color: #ddd;
+    padding: 40px;
+}
+.nav-list a:hover{
+    color: white;
+}
+/* FIM DO HEADER */
+
+/* MAIN */
+.main{
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-color: #000;
+    background-image: url(IMAGES/programador.png);
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+
+}
+.main h1{
+    color: #fff;
+    font-size: 60px;
+}
+.main p{
+    font-style: italic;
+    color: bisque;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main button{
+    cursor: pointer;
+    background-color: #ffff;
+    border: 0;
+    padding: 17px;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+.main button:hover{
+
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+/* FIM MAIN */
+    
+/* SOBRE */
+.about {
+    background-color: #fff;
+    width: 100%;
+    padding-left: 10%;
+    padding: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.about div{
+    max-width: 50%;
+    padding-right:40px;
+}
+.about img{
+    max-width: 400px;
+    border-radius: 15px;
+}
+.about h2{
+    font-size: 35px;
+    padding-bottom:10px ;
+}
+.about p{
+    font-size: 20px;
+}
+/* FIM SOBRE */
+
+/* PROJETOS */
+.projetos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    font-style: italic;
+    
+}
+.projetos-image{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+
+}
+.projetos img{
+    width: 22%;
+    opacity: 0.8;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    
+}
+.projetos img:hover{
+    opacity: 1;
+    transition: 0.7s; 
+}
+.projetos button{
+    border: 0;
+    background-color: #181818;
+    color: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.projetos button:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+/* FIM PROJETOS */
+/* RODAPÉ */
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: #181818;
+    color: #ddd;
+    font-size: 16px;
+    padding: 19px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer a{
+    color: #ddd;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: white;
+    font-weight: bolder;
+}
+/* FIM RODAPÉ */
+/* RESPONSIVIDADE */
+@media (max-width: 1100px) {
+
+    .main{
+        background-size: cover;
+    }
+    .main h1{
+        font-size: 35px;
+    }
+    .main p{
+        font-size: 20px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .about div{
+        max-width: 80%;
+
+    }
+    .about img{
+        width: 80%;
+        margin-top: 30px;
+    }
+    .projetos img{
+        width: 30%;
+        background-size: cover;
+    }
+}
